@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soal 3</title>
+  </head>
+  <body>
+    <select id="pilih">
+      <option value="Ruby">Ruby</option>
+      <option value="php">php</option>
+      <option value="JavaScrip">JavaScrip</option>
+      <option value="python">Python</option>
+    </select><br>
+    <input type="checkbox" id="prem"/>Premium
+    <button onclick="cek()">cek premium</button>
+    <h3 id="hasil"></h3>
+    <script type="text/javascript" charset="utf-8">
+      function cek(){
+        var Ckprem = "Premium";
+        var pilih = document.getElementById("pilih").value;
+        var prem = document.getElementById("prem").checked;
+        if( pilih === "JavaScrip" && prem ){
+            hasil.innerText = "akun JavaScrip anda Premium";
+            }else{
+                hasil.innerText = "akun " + pilih+ " anda tidak Premium";
+            }
+      }
+    </script>
+  </body>
+</html>
