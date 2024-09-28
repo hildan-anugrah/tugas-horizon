@@ -1,0 +1,10 @@
+Soal 1: Seorang pengguna hanya bisa login jika username dan password benar. Tampilkan pesan "Login berhasil" atau "Login gagal".
+Soal 2: Jika pengguna memilih JavaScript atau Python, tampilkan "Bahasa dipilih". Jika tidak, tampilkan "Bahasa tidak valid".
+Soal 3: Jika pengguna memilih JavaScript dan memiliki akun premium, tampilkan "Akses materi lanjutan". Jika salah satu tidak terpenuhi, tampilkan "Akses ditolak".
+Soal 4: Buat kondisi yang memeriksa jika pengguna belum terdaftar dan tidak memiliki email, tampilkan "Pendaftaran diperlukan".
+Soal 5: Jika pengguna memiliki lebih dari 10 proyek di portfolio mereka, tampilkan "Portofolio penuh".
+Soal 6: Buat logika untuk mengecek apakah pengguna telah menyelesaikan semua tugas kursus dengan nilai di atas 80, lalu tampilkan pesan keberhasilan.
+Soal 7: Jika pengguna tidak memilih framework (seperti React atau Vue), tampilkan pesan "Framework belum dipilih".
+Soal 8: Buat kondisi di mana pengguna perlu memilih minimal dua bahasa pemrograman untuk mendapatkan akses, tampilkan pesan "Bahasa sudah dipilih".
+Soal 9: Jika pengguna memilih lebih dari satu bahasa, tampilkan "Pilihan ganda", jika tidak, tampilkan "Pilih minimal satu".
+Soal 10: Periksa apakah pengguna adalah admin dan telah berkontribusi di lebih dari 5 proyek, lalu tampilkan pesan dengan menggunakan template string.
