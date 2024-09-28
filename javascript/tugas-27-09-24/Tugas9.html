@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soal 9</title>
+</head>
+<body>
+  <P>Jika pengguna memilih lebih dari satu bahasa, tampilkan "Pilihan ganda", jika tidak, tampilkan "Pilih minimal satu".</P>
+  <h2>Pilih Bahasa</h2>
+  <select id="pilihan" multiple>
+    <option value="JavaScript">JavaScript</option>
+    <option value="Python">Python</option>
+    <option value="Java">Java</option>
+    <option value="C++">C++</option>
+    <option value="Ruby">Ruby</option>
+  </select>
+  <button type="button" onclick="pilih()">Submit</button>
+  <p id="hasil"></p>
+  <script>
+    function pilih() {
+      var Dipilih = document.getElementById("pilihan");
+      var Jumlah = Dipilih.selectedOptions.length;
+      if (Jumlah === 0) {
+        hasil.innerText = "Pilih minimal satu bahasa";
+      } else if (Jumlah === 1) {
+        hasil.innerText = "yang dipilih adalah " + Dipilih.value;
+      } else if (Jumlah >= 1) {
+        hasil.innerText = "bahasa yang anda pilih lebih dari 1(pilihan ganda)";
+      } 
+    }
+  </script>
+</body>
+</html>
