@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soal no 1</title>
+</head>
+<body>
+    <select id="pilih">
+        <option value="">--pilih--</option>
+        <option value="JavaScrip">JavaScrip</option>
+        <option value="python">Python</option>
+    </select>
+    <button onclick="pilih()">pilih</button>
+    <p id="hasil"></p>
+    <script>
+        function pilih(){
+            var pilih = document.getElementById("pilih").value;
+            var hasil = document.getElementById("hasil");
+            if( pilih === "JavaScrip" || pilih === "python" ){
+                hasil.innerText = "pilihan anda adalah : " + pilih;
+            }else{
+                hasil.innerText = "pilihan anda tidak valid";
+            }
+        }
+    </script>
+</body>
+</html>
