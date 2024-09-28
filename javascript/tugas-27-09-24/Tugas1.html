@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>soal no 1</title>
+    <title>soal 1</title>
 </head>
 <body>
-    <select id="pilih">
-        <option value="">--pilih--</option>
-        <option value="JavaScrip">JavaScrip</option>
-        <option value="python">Python</option>
-    </select>
-    <button onclick="pilih()">pilih</button>
-    <p id="hasil"></p>
+    <p>Seorang pengguna hanya bisa login jika username dan password benar. Tampilkan pesan "Login berhasil" atau "Login gagal".<br>defaut user :"admin"<br>defaut password :"12345"</p>
+    <input id="user" type="text" placeholder="user"><br />
+    <input id="pass" type="password" placeholder="password">
+    <button onclick="cek()">Login</button>
+    <div id="hasil"></div>
     <script>
-        function pilih(){
-            var pilih = document.getElementById("pilih").value;
-            var hasil = document.getElementById("hasil");
-            if( pilih === "JavaScrip" || pilih === "python" ){
-                hasil.innerText = "pilihan anda adalah : " + pilih;
-            }else{
-                hasil.innerText = "pilihan anda tidak valid";
+        function cek(){
+            var CkUser = "admin";
+            var CkPass = "12345";
+            var user = document.getElementById("user").value;
+            var pass = document.getElementById("pass").value;
+            if ( user === CkUser && pass === CkPass){
+                document.getElementById("hasil").innerHTML ="login berhasil!!";
+            }else {
+                document.getElementById("hasil").innerHTML ="User atau Pasword salah!!";
             }
         }
     </script>
