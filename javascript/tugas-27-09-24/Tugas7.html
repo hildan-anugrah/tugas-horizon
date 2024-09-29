@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+  </head>
+  <body>
+    <p>Jika pengguna tidak memilih framework (seperti React atau Vue), tampilkan pesan "Framework belum dipilih"</p>
+    <hr />
+    <h3>Pilih Framework yang inngin anda prlajari</h3>
+    <select id="pilih">
+      <option value="">-- Pilih --</option>
+      <option value="React">React</option>
+      <option value="Vue">Vue</option>
+      <option value="Angular">Angular</option>
+      <option value="Ember">Ember</option>
+    </select>
+    <button onclick="cek()">Pelajari</button>
+    <h3 id="hasil"></h3>
+    <script type="text/javascript" charset="utf-8">
+      function cek(){
+        var pilih =document.getElementById("pilih").value;
+        if ( pilih === "React" || pilih === "Vue" || pilih === "Angular" || pilih === "Ember"){
+          hasil.innerText = "Framework yang anda filih adalah : " + pilih;
+        }
+        else {
+          hasil.innerText = "anda belum memilih Framework";
+        }
+      }
+    </script>
+  </body>
+</html>
