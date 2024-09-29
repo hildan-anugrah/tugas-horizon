@@ -27,7 +27,7 @@
         var Jumlah = Proyek.selectedOptions.length;
         if (Jumlah === 0) {
         hasil.innerText = "Anda belum memiliki Portfolio (" + Jumlah + "/10)";
-        }else if (Jumlah <= 10) {
+        }else if (Jumlah < 10) {
         hasil.innerText = "Jumlah Portfolio proyek anda (" + Jumlah + "/10)";
         }else if (Jumlah === 10) {
         hasil.innerText = "Portfolio anda penuh (" + Jumlah + "/10)";
