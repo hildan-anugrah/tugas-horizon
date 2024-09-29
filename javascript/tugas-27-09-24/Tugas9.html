@@ -21,10 +21,10 @@
     function pilih() {
       var Dipilih = document.getElementById("pilihan");
       var Jumlah = Dipilih.selectedOptions.length;
-      if (Jumlah < 1) {
-        hasil.innerText = "Pilih minimal satu bahasa";
-      } else if (Jumlah === 1) {
+      if (Jumlah === 1) {
         hasil.innerText = "yang dipilih adalah " + Dipilih.value;
+      } else if (Jumlah < 1) {
+        hasil.innerText = "Pilih minimal satu bahasa";
       } else if (Jumlah >= 1) {
         hasil.innerText = "bahasa yang anda pilih lebih dari 1(pilihan ganda)";
       } 
