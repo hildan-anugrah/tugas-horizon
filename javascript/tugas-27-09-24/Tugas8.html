@@ -6,7 +6,7 @@
     <title>soal 8</title>
   </head>
   <body>
-    <p>Buat kondisi di mana pengguna perlu memilih minimal dua bahasa pemrograman untuk mendapatkan akses, tampilkan pesan "Bahasa sudah dipilih"</p>
+    <p>Soal 8 : Buat kondisi di mana pengguna perlu memilih minimal dua bahasa pemrograman untuk mendapatkan akses, tampilkan pesan "Bahasa sudah dipilih"</p>
     <hr />
     <label>Silahkan pilih Bahasa pemrograman lebih dari 1</label><br>
     <select id="pilih" multiple>
@@ -21,10 +21,10 @@
       function cek(){
         var pilih = document.getElementById("pilih");
         var jumlah = pilih.selectedOptions.length;
-        if (jumlah <= 1){
-        hasil.innerText = "Anda harus memilih lebih dari " + jumlah + " bahasa";
-      } else if (jumlah >= 2) {
+      if (jumlah >= 2) {
         hasil.innerText = "Bahasa sudah dipilih";
+      } else if (jumlah <= 1){
+        hasil.innerHTML = "Bahasa yang anda pilih " + jumlah + "<br>Anda harus memilih lebih dari 1 bahasa";
         }
       }
     </script>
