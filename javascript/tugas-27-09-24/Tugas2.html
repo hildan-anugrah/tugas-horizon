@@ -7,18 +7,20 @@
 </head>
 <body>
     <p>Jika pengguna memilih JavaScript atau Python, tampilkan "Bahasa dipilih". Jika tidak, tampilkan "Bahasa tidak valid".</p>
+    <hr />
+    <h3>pilih Bahasa pemograma yang ingin anda jalankan</h3>
     <select id="pilih">
-        <option value="">--pilih--</option>
+        <option value="">-- Pilih --</option>
         <option value="JavaScrip">JavaScrip</option>
         <option value="python">Python</option>
     </select>
-    <button onclick="pilih()">pilih</button>
+    <button onclick="pilih()">jalankan</button>
     <h3 id="hasil"></h3>
     <script>
         function pilih(){
             var pilih = document.getElementById("pilih").value;
             if( pilih === "JavaScrip" || pilih === "python" ){
-                hasil.innerText = "pilihan anda adalah : " + pilih;
+                hasil.innerText = "Bahasa pemograma yang akan anda jalankan adalah : " + pilih;
             }else{
                 hasil.innerText = "pilihan anda tidak valid";
             }
