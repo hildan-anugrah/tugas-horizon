@@ -6,7 +6,7 @@
     <title>soal 5</title>
   </head>
   <body>
-    <p>Jika pengguna memiliki lebih dari 10 proyek di portfolio mereka, tampilkan "Portofolio penuh".</p>
+    <p>Jika pengguna memiliki lebih dari 10 proyek di portfolio mereka, tampilkan "Portofolio penuh".</p><hr />
     <select id="proyek" multiple>
       <option>proyek 1</option>
       <option>proyek 2</option>
@@ -20,14 +20,16 @@
       <option>proyek 10</option>
     </select>
     <button onclick="cek()">Cek</button>
-    <p id="hasil"></p>
+    <h3 id="hasil"></h3>
     <script type="text/javascript" charset="utf-8">
       function cek(){
         var Proyek = document.getElementById("proyek");
         var Jumlah = Proyek.selectedOptions.length;
-        if (Jumlah <= 9) {
+        if (Jumlah === 0) {
+        hasil.innerText = "Anda belum memiliki Portfolio (" + Jumlah + "/10)";
+        }else if (Jumlah <= 10) {
         hasil.innerText = "Jumlah Portfolio proyek anda (" + Jumlah + "/10)";
-      } else if (Jumlah === 10) {
+        }else if (Jumlah === 10) {
         hasil.innerText = "Portfolio anda penuh (" + Jumlah + "/10)";
         }
       }
