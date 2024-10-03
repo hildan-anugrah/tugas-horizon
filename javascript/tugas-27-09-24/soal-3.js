@@ -3,7 +3,7 @@
 const JavaScript = true; // Ganti dengan kondisi untuk memeriksa apakah JavaScript dipilih
 const Premium = true; // Ganti dengan kondisi untuk memeriksa apakah pengguna memiliki akun premium
 
-if (isJavaScriptSelected && hasPremiumAccount) {
+if (JavaScript && Premium) {
   console.info("Akses materi lanjutan");
 } else {
   console.warn("Akses ditolak");
