@@ -19,5 +19,5 @@ if (proses > 1) {
 } else if (proses == 1) {
   console.log("anda telah memilih " + proses)
 }else {
-  console.log("Pilih minimal satu");
+  console.warn("Pilih minimal satu");
 }
