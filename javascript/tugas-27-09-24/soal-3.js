@@ -2,7 +2,7 @@
 
 //Deklarasi variabel
 const javaScript = true;
-const premium = true; 
+const premium = true;
 
 //pengecekan premium
 if (javaScript && premium) {
