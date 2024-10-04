@@ -1,7 +1,7 @@
 //Deklarasi variabel
-let javascript = false;
-let python = false; 
-let cpp = false; 
+const javascript = false;
+const python = false; 
+const cpp = false; 
 let proses = 0;
 
 //Logika untuk menghitung pilihan
