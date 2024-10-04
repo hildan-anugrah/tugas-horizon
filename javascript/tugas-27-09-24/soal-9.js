@@ -1,3 +1,5 @@
+//Soal 9: Jika pengguna memilih lebih dari satu bahasa, tampilkan "Pilihan ganda", jika tidak, tampilkan "Pilih minimal satu".
+
 //Deklarasi variabel
 const javascript = false;
 const python = false; 
