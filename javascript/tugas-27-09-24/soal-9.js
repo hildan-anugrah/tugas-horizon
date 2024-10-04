@@ -1,31 +1,23 @@
-
-
+//Deklarasi variabel
 let javascript = true;
-// Ganti dengan kondisi apakah JavaScript dipilih
-
-let python = false; 
-// Ganti dengan kondisi apakah Python dipilih
-
+let python = true; 
 let cpp = false; 
-// Ganti dengan kondisi apakah C++ dipilih
-
 let proses = 0;
+
+//Logika untuk menghitung pilihan
 if (javascript) {
   proses++;
-}
-if (python) {
+}if (python) {
+  proses++;
+}if (cpp) {
   proses++;
 }
 
-if (cpp) {
-  proses++;
-}
-
+//pengecekan berapa banyak yang di pilih
 if (proses > 1) {
   console.log("Pilihan ganda");
-} else if (proses = 1) {
+} else if (proses == 1) {
   console.log("anda telah memilih " + proses)
-}
-else {
+}else {
   console.log("Pilih minimal satu");
 }
