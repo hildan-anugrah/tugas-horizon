@@ -1,9 +1,11 @@
 //Soal 3: Jika pengguna memilih JavaScript dan memiliki akun premium, tampilkan "Akses materi lanjutan". Jika salah satu tidak terpenuhi, tampilkan "Akses ditolak".
 
-const JavaScript = true; // Ganti dengan kondisi untuk memeriksa apakah JavaScript dipilih
-const Premium = true; // Ganti dengan kondisi untuk memeriksa apakah pengguna memiliki akun premium
+//Deklarasi variabel
+const javaScript = true;
+const premium = true; 
 
-if (JavaScript && Premium) {
+//pengecekan premium
+if (javaScript && premium) {
   console.info("Akses materi lanjutan");
 } else {
   console.warn("Akses ditolak");
