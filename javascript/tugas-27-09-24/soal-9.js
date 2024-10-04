@@ -1,6 +1,6 @@
 //Deklarasi variabel
-let javascript = true;
-let python = true; 
+let javascript = false;
+let python = false; 
 let cpp = false; 
 let proses = 0;
 
